@@ -1,0 +1,42 @@
+footer {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  ul {
+    list-style: none;
+    display: inline-flex;
+    li {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0.5em;
+      a {
+        transition: .2s ease-in-out !important;
+        &:hover {
+          // transform: rotate(360deg);
+          transform: scale(1.06);
+        }
+      }
+    }
+  }
+  p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.copy-right {
+  color: $copyright;
+  margin: 1.5em 0 0;
+  a {
+    color: $light-text;
+  }
+}
