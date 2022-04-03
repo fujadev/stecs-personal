@@ -38,7 +38,7 @@ const Home = () => {
                     <h4>The Bank for an ethical lifestyle</h4>
                     <p>Ever been lost as to what you spent money on? Such days are over with Stecs. You get insights on how you spend your earnings. Compare and track your spending periodically to meet your financial goals.</p>
                     <div className='btn-set center'>
-                      <button className='btn btn-primary'>Join the waiting list</button>
+                     <a href='/#join'><button className='btn btn-primary'>Join the waiting list</button></a>
                     </div>
                   </div>
                 </div>
@@ -72,7 +72,7 @@ const Home = () => {
                   data-aos-offset="200"
                   data-aos-easing="ease-in-sine">
                   <h4>Insights on Your Spendings</h4>
-                  <p>Ever been lost as to what you spent money on? Such days are over with Stecs. You get insights on how you spend your earnings. Compare and track your spending periodically to meet your financial goals.</p>
+                  <p className='justified-content'>Ever been lost as to what you spent money on? Such days are over with Stecs. You get insights on how you spend your earnings. Compare and track your spending periodically to meet your financial goals.</p>
                 </div>
               </div>
               <div className='col-md-4' data-aos="fade-fade-up-left">
@@ -128,7 +128,7 @@ const Home = () => {
         <section className='faq' id="faq">
           <FAQ />
         </section>
-        <section>
+        <section id="join">
           <div className='container'>
             <div className='section-title'
               data-aos="fade-up"

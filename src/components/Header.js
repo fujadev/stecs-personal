@@ -22,7 +22,7 @@ const Header = () => {
                   <li><span className='-icon'><i className='checker-icon'></i></span> Save and Invest</li>
                 </ul>
                 <div className='btn-set'>
-                  <button className='btn btn-primary'>Get Early Access</button>
+                <a href='/#join'><button className='btn btn-primary'>Get Early Access</button></a>
                 </div>
               </div>
             </div>
