@@ -9,17 +9,11 @@ const Footer = () => {
             <div className='social-media'>
               <p>Follow us:</p>
               <ul>
-                <li>
-                  <Link to='/'><span className='-icon'><i className='facebook-icon'></i></span></Link>
-                </li>
                 <li>  
-                  <Link to='/'><span className='-icon'><i className='twitter-icon'></i></span></Link>
+                  <a href="https://twitter.com/Stecsng" rel="noopener noreferrer" target="_blank"><span className='-icon'><i className='twitter-icon'></i></span></a>
                 </li>
                 <li>
-                  <Link to='/'><span className='-icon'><i className='linkedin-icon'></i></span></Link>
-                </li>
-                <li>
-                  <Link to='/'><span className='-icon'><i className='instagram-icon'></i></span></Link>
+                  <a href="https://www.instagram.com/stecs.ng/" rel="noopener noreferrer" target="_blank"><span className='-icon'><i className='instagram-icon'></i></span></a>
                 </li>
               </ul>
             </div>
@@ -29,7 +23,7 @@ const Footer = () => {
                 Stecs Financial Technologies  Ltd is registered with CAC with RC Number 1873053.</p>
 
               <p>Registered office: No 12F Tola Adewumi Street Maryland Estate, Maryland Lagos Nigeria</p>
-              <p className='copy-right'>Intellectual Property Protection - <Link to="/">Privacy Policy - Sitemap - Terms of Use - Legal </Link>  ©️2021-2022 stecs.com. All rights reserved.</p>
+              <p className='copy-right'>Intellectual Property Protection - <Link to="/">Privacy Policy - Sitemap - Terms of Use - Legal </Link>  ©️2021-2022 stecs.ng. All rights reserved.</p>
             </div>
           </div>
         </div>
