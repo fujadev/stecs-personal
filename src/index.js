@@ -12,6 +12,9 @@ import 'animate.css';
 import 'aos/dist/aos.css';
 import './custom.scss';
 
+// require('dotenv').config()
+// console.log(process.env) 
+
 AOS.init();
 
 /* Root container target */

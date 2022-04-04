@@ -3,14 +3,14 @@ import { stecsItems } from '../../../config/utility';
 import StecsImage from '../../../assets/img/stecs-demo-image.png';
 import StecsInsightImage from '../../../assets/img/stecs-insight-img.png';
 import ChartView from '../../../components/ChartView';
-import ContactForm from '../../../components/ContactForm';
 import Header from '../../../components/Header';
 import FAQ from '../../../components/FAQ';
 import StecsCards from '../../../components/StecsCards';
 import Footer from '../../../components/Footer';
+import { Link } from 'react-router-dom';
+import FormMailContainer from '../../../components/FormMailContainer';
 
 const Home = () => {
-
   const [completed, setCompleted] = useState(false);
   const [counter, setCounter] = useState(2500);
 
@@ -38,7 +38,7 @@ const Home = () => {
                     <h4>The Bank for an ethical lifestyle</h4>
                     <p>Ever been lost as to what you spent money on? Such days are over with Stecs. You get insights on how you spend your earnings. Compare and track your spending periodically to meet your financial goals.</p>
                     <div className='btn-set center'>
-                     <a href='/#join'><button className='btn btn-primary'>Join the waiting list</button></a>
+                      <Link className='btn btn-primary' to='/#join-section'>Join the waiting list</Link>
                     </div>
                   </div>
                 </div>
@@ -128,7 +128,7 @@ const Home = () => {
         <section className='faq' id="faq">
           <FAQ />
         </section>
-        <section id="join">
+        <section id="join-section">
           <div className='container'>
             <div className='section-title'
               data-aos="fade-up"
@@ -150,7 +150,7 @@ const Home = () => {
               </div>
               <div className={`col-md-8 ${completed ? 'completed-off' : ''}`} >
                 <div className={`animate__animated ${completed ? 'animate__fadeOutDown' : 'animate__fadeInRight'}`}>
-                  <ContactForm handleCompleted={handleCompleted} />
+                  <FormMailContainer handleCompleted={handleCompleted}/>
                 </div>
               </div>
 
