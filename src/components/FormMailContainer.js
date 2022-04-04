@@ -4,7 +4,8 @@ import ContactForm from './ContactForm';
 
 const FormMailContainer = ({ handleCompleted }) => {
 
-  const stecsUrl = `https://stecs.us14.list-manage.com/subscribe/post?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`;
+  // const stecsUrl = `https://stecs.us14.list-manage.com/subscribe/post?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`;
+  const stecsUrl = `https://stecs.us14.list-manage.com/subscribe/post?u=6fe95b8956afaf57721852c18&id=1f0e02e326`;
 
   return (
     <MailchimpSubscribe

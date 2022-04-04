@@ -16,7 +16,7 @@ const ContactForm = ({ status, message, mailValidateCompleted, handleCompleted }
     if (status === "success" && message !== '') {
       handleCompleted();
     }
-  }, [status]);
+  }, [status, message]);
 
   return (
     <Formik
