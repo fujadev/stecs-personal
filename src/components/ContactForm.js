@@ -48,7 +48,6 @@ const ContactForm = ({ status, message, mailValidateCompleted, handleCompleted }
         }) => (
           <form onSubmit={handleSubmit}>
             <section>
-              {JSON.stringify({ status, message }, null, 2)}
               {
                 (status === "error") &&
                 <div className="alert alert-danger">{message}</div>
