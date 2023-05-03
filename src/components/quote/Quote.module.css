@@ -1,0 +1,73 @@
+.card {
+    background: #FFFFFF;
+    border-width: 1.30547px 1.30547px 2.61093px 1.30547px;
+    border-style: solid;
+    border-color: #ECECEC;
+    box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.02);
+    border-radius: 9.791px;
+    padding: 29px 36px 37px 20px;
+    width: 406px;
+}
+
+.card .img {
+    display: block;
+}
+
+.card .text {
+    margin: 20px 0 57px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: start;
+    color: #1F1F1F;
+}
+
+.card .author {
+    display: flex;
+    flex-direction: column;
+    gap: 6.5px;
+
+}
+
+.card .author p{
+    text-align: start;
+}
+
+.card .author .name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16.085px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    color: #1F1F1F;
+}
+
+.card .author .location {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9.65102px;
+    line-height: 140%;
+    color: #1F1F1F;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 326.53px;
+        padding: 23px 28px 29px 16px;
+    }
+
+    .card .text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14.4765px;
+        line-height: 23px;
+        color: #1F1F1F;
+    }
+
+    .card img {
+        width: 28px;
+        height: auto;
+    }
+
+}

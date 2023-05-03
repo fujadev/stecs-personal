@@ -1,0 +1,39 @@
+.button {
+    background: #2AAEDF !important;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.big {
+    width: 270px;
+    height: 60px;
+    border-radius: 5.7px;
+    padding: 16px 34px 16px 34px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.small {
+    width: 144px;
+    height: 40px;
+    border-radius: 3px;
+    padding: 13px 28px 13px 28px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+@media screen and (max-width: 600px) {
+    .big {
+        width: 230.31px;
+        height: 50.85px;
+        font-weight: 500;
+        font-size: 16.9486px;
+        padding: 15px 21px;
+    }
+}

@@ -1,0 +1,140 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 79.89px;
+    gap: 14%;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 27px;
+}
+
+.logo img{
+    display: block;
+    position: relative;
+}
+
+.links a {
+    color: #1F1F1F;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.01em;
+    min-width: 70px;
+}
+
+.links a:hover, .links a.active{
+    color: #2AAEDF;
+}
+
+.hamburger {
+    width: 22.5px;
+    height: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.hamburger:hover {
+    cursor: pointer
+}
+
+.hamburger div {
+    border: 1.6px solid #000000;
+    transition: all 0.1s ease-in-out;
+}
+
+
+
+.hamburger.active div:nth-child(1){
+    transform: rotate(45deg) translateY(8.4853px);
+    width: 24px;
+}
+.hamburger.active div:nth-child(2){
+    visibility: hidden;
+    background: transparent;
+    width: 0;
+}
+
+.hamburger.active div:nth-child(3){
+    transform: rotate(-45deg) translateY(-8.4853px);
+    width: 24px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .nav {
+        padding: 36px 24px;
+        position: relative;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .dropdown {
+        display: flex;
+        position: absolute;
+        top: 102.8px;
+        z-index: 1000;
+        flex-direction: column;
+        align-items: start;
+        background: #ffffff;
+        width: 100%;
+        padding: 15px 24px;
+        transition: all 0.1s ease-in-out;
+    }
+    .dropdown a {
+        display: block;
+        width: 100%;
+        padding: 16px 0px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        text-decoration: none;
+        justify-content: start;
+        text-align: start;
+        color: #333333;
+        cursor: pointer;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    }
+
+    .dropdown .btn {
+        width: 100%;
+        margin-top: 16px;
+        height: 45px;
+        background-color: #2AAEDF;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .dropdown .btn p {
+        margin: 0px;
+        color: #FFFFFF;
+    }
+
+}
+

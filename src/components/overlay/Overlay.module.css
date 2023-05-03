@@ -1,0 +1,208 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    position: fixed;
+    background: #000000;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.card {
+    background: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    opacity: 1;
+    flex-direction: column;
+    padding: 43px 69px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10001;
+    position: absolute;
+    top: 123px;
+}
+
+.card .bigText {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #191C1F;
+    opacity: 1;
+    margin-bottom: 16px;
+}
+
+.card .smallText {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    line-height: 28px;
+    letter-spacing: -0.125px;
+    color: #696969;
+    margin-bottom: 24px;
+}
+
+.card .qr {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    padding: 0 22px;
+    gap: 8px;
+    align-items: center;
+}
+
+.form .countryCode {
+    display: flex;
+    gap: 6px;
+    padding: 20px 39px 17px 16px;
+    background: #F9F9FA;
+    border-radius: 8px;
+}
+
+.form .countryCode p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #191C1F;
+}
+
+.form input {
+    padding: 18px 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #191C1F;
+    background: #F9F9FA;
+    border-radius: 8px;
+    border: none;
+    width: 80%;
+}
+
+.form input::placeholder {
+    color: #75808A;
+}
+
+.button {
+    display: flex;
+    gap: 12px;
+    background: #2AAEDF;
+    border-radius: 5.7px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    margin: 14px 16px 0 16px;
+}
+
+.button p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 325px;
+        top: 70px;
+        padding: 40px 24px;
+        text-align: center;
+        border-radius: 12px;
+    }
+
+    .card > div {
+        text-align: center;
+    }
+
+    .card .bigText {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 10px;
+    }
+
+    .card .smallText {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 13px;
+        margin-bottom: 16px;
+    }
+
+    .card .qr {
+        margin-bottom: 20px;
+    }
+
+    .card .qr img {
+        width: 100px;
+        height: auto;
+    }
+
+    .form {
+        padding: 0 15px;
+        gap: 4px;
+        height: 31px;
+    }
+
+    .form .countryCode {
+        padding: 0 10px;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        align-items: center;
+    }
+
+    .form .countryCode p {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    .countryCode img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .form input {
+        height: 100%;
+        padding: 0 8px;
+        font-size: 12px;
+        border-radius: 4px;
+        line-height: 13px;
+    }
+
+    .button {
+        padding: 8px 0;
+    }
+
+    .button p {
+        font-size: 12px;
+        line-height: 13px;
+    }
+
+    .button img {
+        width: 15px;
+        border-radius: 4px;
+    }
+
+    .active {
+        color: red;
+    }
+}

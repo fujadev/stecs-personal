@@ -1,0 +1,105 @@
+.sectionSeven {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.sectionSeven .buttonText {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.bigDiv .texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.bigDiv .texts .big {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 57px;
+    line-height: 73px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #191C1F;
+}
+
+.bigDiv .texts .small {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.125px;
+    color: #696969;
+}
+
+@media screen and (max-width: 600px) {
+    .bigDiv .texts {
+        gap: 8px;
+    }
+
+    .bigDiv .texts .big {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #191C1F;
+    }
+
+    .bigDiv .texts .small {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 13px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.0567446px;
+        color: #696969;
+    }
+
+    .sectionSeven {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .sectionSeven .buttonText {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .sectionSeven {
+        gap: 28px;
+    }
+
+    .sectionSeven .texts {
+        max-width: 318px;
+    }
+
+    .sectionSeven .buttonText {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16.9486px;
+        line-height: 20px;
+    }
+
+    .sectionSeven .buttonText img {
+        width: 15px;
+        height: auto;
+    }
+}
