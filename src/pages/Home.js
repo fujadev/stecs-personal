@@ -3,7 +3,6 @@ import classes from './Home.module.css'
 import Nav from "../components/nav/Nav";
 import Footer from "../components/footer/Footer";
 import Button from "../components/button/Button";
-import Quote from "../components/quote/Quote";
 import TryNow from "../components/tryNow/TryNow";
 import AppContext from "../context/context-api";
 
@@ -11,9 +10,9 @@ export default function Home() {
   const ctx = useContext(AppContext);
   const overlayIsActive = ctx.overlayActive;
   const showOverlay = ctx.showOverlay;
-    const firstText =
-      "I never thought banking could be so easy and stress-free until I started using this app. It has completely transformed the way I manage my finances.";
-    const secondText = ""
+    // const firstText =
+    //   "I never thought banking could be so easy and stress-free until I started using this app. It has completely transformed the way I manage my finances.";
+    // const secondText = ""
 
     const buttonClickHandler = () => {
       showOverlay();
@@ -26,16 +25,18 @@ export default function Home() {
             overlayIsActive ? classes.overlay : ""
           }`}
         >
-          <p className={classes.big}>
-            One app for all your ethical financial needs
-          </p>
-          <p className={classes.small}>
-            Save, spend and grow your wealth ethically with ease
-          </p>
-          <Button buttonSize="big" clickHandler={buttonClickHandler}>
-            <span className={classes.getStarted}>Get Started</span>
-            <img src="./images/hero/arrow1.png" alt="" />
-          </Button>
+          <div className={classes.widthEnforcer}>
+            <p className={classes.big}>
+              One app for all your ethical financial needs
+            </p>
+            <p className={classes.small}>
+              Save, spend and grow your wealth ethically with ease
+            </p>
+            <Button buttonSize="big" clickHandler={buttonClickHandler}>
+              <span className={classes.getStarted}>Get Started</span>
+              <img src="./images/hero/arrow1.png" alt="" />
+            </Button>
+          </div>
           <img src="./images/hero/card.png" alt="" className={classes.image1} />
           <img
             src="./images/hero/cash1.png"
@@ -63,7 +64,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className={`container-fluid ${classes.sectionTwo}`}>
+        <div className={`container-fluid ${classes.sectionTwo} ${classes.widthEnforcer}`}>
           <div className={classes.insight}>
             <div className={classes.texts}>
               <p className={classes.big}>Get insights on your spendings</p>
@@ -205,7 +206,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div
+        {/* <div
           className={`container-fluid ${classes.sectionFive} ${classes.bigDiv}`}
         >
           <div className={classes.texts}>
@@ -232,7 +233,7 @@ export default function Home() {
               text={firstText}
             />
           </div>
-        </div>
+        </div> */}
         <div className={`${classes.bigDiv} container-fluid ${classes.faq}`}>
           <div className={classes.texts}>
             <p className={classes.big}>Frequently Asked Questions</p>

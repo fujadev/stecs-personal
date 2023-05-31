@@ -31,15 +31,17 @@ export default function AboutUs(){
         const text5 =
           "Delivering an exceptional experience that meets and exceeds your expectations.";
 
-        const image1 = "./images/about/magnifier.png"
+        const image1 = "./images/about/mag.png"
         const image2 = './images/about/handPhone.png'
-        const image3 = './images/about/hat.png'
-        const image4 = './images/about/hospital.png'
-        const image5 = './images/about/smiley.png'
+        const image3 = './images/about/education.png'
+        const image4 = './images/about/hand.png'
+        const image5 = './images/about/satisfaction.png'
     return (
       <>
         <Nav />
-        <div className={`${classes.hero} container-fluid`}>
+        <div
+          className={`${classes.hero} ${classes.widthEnforcer} container-fluid`}
+        >
           <div className={classes.big}>
             One app for all your ethical financial needs
           </div>
@@ -49,7 +51,9 @@ export default function AboutUs(){
           </div>
         </div>
 
-        <div className={`container-fluid ${classes.sectionOne}`}>
+        <div
+          className={`container-fluid ${classes.sectionOne} ${classes.widthEnforcer}`}
+        >
           <div className={classes.flexbox}>
             <div className={`${classes.imageDiv} ${classes.green}`}>
               <img src="./images/about/phone_mockup.png" alt="" />
@@ -64,7 +68,9 @@ export default function AboutUs(){
             {isPhone && <AboutText title={titleTwo} body={bodyTextTwo} />}
           </div>
         </div>
-        <div className={`${classes.sectionTwo} container-fluid`}>
+        <div
+          className={`${classes.sectionTwo} ${classes.widthEnforcer} container-fluid`}
+        >
           <div className={classes.texts}>
             <p className={classes.big}>What we stand for</p>
             <p className={classes.small}>
@@ -79,6 +85,7 @@ export default function AboutUs(){
               body={text1}
               image={image1}
               color="#EDF8FC"
+              width= "190"
             />
             <AboutCard
               title="Simplicity"
@@ -91,22 +98,27 @@ export default function AboutUs(){
               body={text3}
               image={image3}
               color="#FFFAEB"
+              width="250"
             />
             <AboutCard
               title="Control"
               body={text4}
               image={image4}
               color="#EDF8FC"
+              width={180}
             />
             <AboutCard
               title="Satifaction"
               body={text5}
               image={image5}
               color="#EAF6EA"
+              width={280}
             />
           </div>
         </div>
-        <div className={`${classes.sectionTwo} container-fluid`}>
+        <div
+          className={`${classes.sectionTwo} ${classes.widthEnforcer} container-fluid`}
+        >
           <TryNow />
         </div>
         <Footer />
