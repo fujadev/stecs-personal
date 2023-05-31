@@ -19,18 +19,19 @@ export default function Nav() {
     return (
       <>
         <div className={`${classes.nav} container-fluid main d-flex`}>
-          <div className={classes.logo}>
-            <img src="./stecs_logo.png" alt="" />
-          </div>
-          {!isPhone && (
-            <div className={`${classes.links}`}>
-              <NavLink
-                className={({ isActive }) => (isActive ? classes.active : "")}
-                to="/"
-              >
-                Home
-              </NavLink>
-              {/* <NavLink
+          <div className={classes.nav_width}>
+            <div className={classes.logo}>
+              <img src="./stecs.svg" alt="" />
+            </div>
+            {!isPhone && (
+              <div className={`${classes.links}`}>
+                <NavLink
+                  className={({ isActive }) => (isActive ? classes.active : "")}
+                  to="/"
+                >
+                  Home
+                </NavLink>
+                {/* <NavLink
                 className={({ isActive }) => (isActive ? classes.active : "")}
                 to="/"
               >
@@ -42,36 +43,41 @@ export default function Nav() {
               >
                 Learn
               </NavLink> */}
-              <NavLink
-                className={({ isActive }) => (isActive ? classes.active : "")}
-                to="/about-us"
-              >
-                About Us
-              </NavLink>
-              <NavLink
-                className={({ isActive }) => (isActive ? classes.active : "")}
-                to="/community"
-              >
-                Community
-              </NavLink>
-            </div>
-          )}
-          {!isPhone && <Button buttonSize="small" clickHandler={buttonClickHandler}>Get Started</Button>}
+                <NavLink
+                  className={({ isActive }) => (isActive ? classes.active : "")}
+                  to="/about-us"
+                >
+                  About Us
+                </NavLink>
+                <NavLink
+                  className={({ isActive }) => (isActive ? classes.active : "")}
+                  to="/community"
+                >
+                  Community
+                </NavLink>
+              </div>
+            )}
+            {!isPhone && (
+              <Button buttonSize="small" clickHandler={buttonClickHandler}>
+                Get Started
+              </Button>
+            )}
 
-          {isPhone && (
-            <div
-              className={`${classes.hamburger} ${
-                showNav ? classes.active : ""
-              }`}
-              onClick={() => setShowNav((prev) => !prev)}
-            >
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          )}
+            {isPhone && (
+              <div
+                className={`${classes.hamburger} ${
+                  showNav ? classes.active : ""
+                }`}
+                onClick={() => setShowNav((prev) => !prev)}
+              >
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            )}
+          </div>
         </div>
-        {isPhone && showNav && (  
+        {isPhone && showNav && (
           <div className={`${classes.dropdown}`}>
             <Link to="/">Home</Link>
             {/* <Link to="/">Product</Link>

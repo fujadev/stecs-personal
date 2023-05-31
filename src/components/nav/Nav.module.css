@@ -1,13 +1,20 @@
 .nav {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav_width {
+    max-width: 900px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 79.89px;
+    padding: 10px;
     gap: 14%;
     width: 100%;
     background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
 }
 
 .links {
@@ -86,10 +93,13 @@
 
 @media screen and (max-width: 600px) {
     .nav {
-        padding: 36px 24px;
-        position: relative;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
     }
+
+    .nav_width {
+        padding: 36px 24px;
+        position: relative;
+    }   
 
     .dropdown {
         display: flex;
@@ -97,7 +107,7 @@
         top: 102.8px;
         z-index: 1000;
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
         background: #ffffff;
         width: 100%;
         padding: 15px 24px;
@@ -112,7 +122,7 @@
         font-size: 18px;
         line-height: 21px;
         text-decoration: none;
-        justify-content: start;
+        justify-content: flex-start;
         text-align: start;
         color: #333333;
         cursor: pointer;

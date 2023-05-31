@@ -1,8 +1,7 @@
 import React from "react";
 import classes from './AboutCard.module.css'
 
-export default function AboutCard({title, body, image, color}) {
-
+export default function AboutCard({title, body, image, color, width}) {
     return (
       <div
         className={classes.container}
