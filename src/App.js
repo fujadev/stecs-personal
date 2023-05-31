@@ -1,6 +1,4 @@
 import './App.css';
-import Nav from './components/nav/Nav';
-import Footer from './components/footer/Footer';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Community from './pages/Community';
