@@ -19,7 +19,7 @@
 }
 
 .small {
-    width: 144px;
+    min-width: 144px;
     height: 40px;
     border-radius: 3px;
     padding: 13px 28px 13px 28px;

@@ -12,7 +12,7 @@
     text-align: start;
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 34px;
     line-height: 51px;
     color: #0A1930;
 }
@@ -31,9 +31,9 @@
 
 @media screen and (max-width: 600px) {
     .container {
-        align-items: start;
+        align-items: flex-start;
         width: 100%;
-        justify-content: start;
+        justify-content: flex-start;
         gap: 12px;
     }
 
