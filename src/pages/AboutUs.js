@@ -88,6 +88,13 @@ export default function AboutUs(){
               width= "190"
             />
             <AboutCard
+              title="Transparency"
+              body={text1}
+              image={image1}
+              color="#EDF8FC"
+              width= "190"
+            />
+            <AboutCard
               title="Simplicity"
               body={text2}
               image={image2}

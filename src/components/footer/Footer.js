@@ -31,8 +31,7 @@ export default function Footer() {
             list={[
               { name: "About us", link: "/about-us" },
               { name: "Features", link: "" },
-              { name: "Pricing", link: "" },
-              { name: "Our Team", link: "" },
+              { name: "Community", link: "/community" },
             ]}
           />
           <FooterColumn
@@ -47,7 +46,6 @@ export default function Footer() {
             title="Contact"
             list={[
               { name: "+234813472940", link: "" },
-              { name: "demo@stecs.ng", link: "" },
               { name: "support@stecs.ng", link: "" },
             ]}
           />
