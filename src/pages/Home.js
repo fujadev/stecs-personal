@@ -157,7 +157,7 @@ export default function Home() {
                 </p>
               </div>
               <div className={classes.content}>
-                <p className={classes.text1}>Maintain Zero interest</p>
+                <p className={classes.text1}>Zero interest</p>
                 <p className={classes.text2}>
                   Your deposit does not attract any form of interest but
                   permissible profits.
