@@ -46,7 +46,7 @@ export default function Footer() {
             title="Contact"
             list={[
               { name: "+2348066443041", link: "" },
-              { name: "support@stecs.ng", link: "support@stecs.ng" },
+              { name: "support@stecs.ng", link: "mailto:support@stecs.ng" },
             ]}
           />
           <FooterColumn
