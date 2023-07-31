@@ -12,7 +12,7 @@ export default function AboutUs(){
         const isPhone = ctx.isPhone;
         const titleOne = "The One money App for an ethical lifestyle";
         const bodyTextOne =
-          "Stecs is an ethical mobile money app that lets you manage all your finances in just one app. Swift account opening process, money management tools, cards services, investments and credit products are some of the things you stand to gain by opening an account with us.";
+          "Stecs is an ethical mobile money app that lets you manage all your finances in just one app. Swift account opening process, savings and investment options, money management tools are some of the things you stand to gain by opening an account with us.";
         
         const titleTwo =
           "We’re on a mission to remove your ethical financial worries";
@@ -46,8 +46,8 @@ export default function AboutUs(){
             One app for all your ethical financial needs
           </div>
           <div className={classes.small}>
-            Stecs is a non-interest financial mobile app that lets you manage
-            all your finances in an ethical manner and in just one app.
+            Stecs is an ethical money app that allows users securely save,
+            invest and grow their wealth ethically with ease.
           </div>
         </div>
 
@@ -81,24 +81,17 @@ export default function AboutUs(){
 
           <div className={classes.cards}>
             <AboutCard
-              title="Transparency"
-              body={text1}
-              image={image1}
-              color="#EDF8FC"
-              width= "190"
-            />
-            <AboutCard
-              title="Transparency"
-              body={text1}
-              image={image1}
-              color="#EDF8FC"
-              width= "190"
-            />
-            <AboutCard
               title="Simplicity"
               body={text2}
               image={image2}
               color="#EAF6EA"
+            />
+            <AboutCard
+              title="Transparency"
+              body={text1}
+              image={image1}
+              color="#EDF8FC"
+              width="190"
             />
             <AboutCard
               title="Education"

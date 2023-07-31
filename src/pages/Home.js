@@ -27,10 +27,10 @@ export default function Home() {
         >
           <div className={classes.widthEnforcer}>
             <p className={classes.big}>
-              One app for all your ethical financial needs
+              The Ethical and Interest-Free Money App for Professionals
             </p>
             <p className={classes.small}>
-              Save, spend and grow your wealth ethically with ease
+              Save, invest and grow your wealth ethically with ease.
             </p>
             <Button buttonSize="big" clickHandler={buttonClickHandler}>
               <span className={classes.getStarted}>Get Started</span>
@@ -64,7 +64,9 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className={`container-fluid ${classes.sectionTwo} ${classes.widthEnforcer}`}>
+        <div
+          className={`container-fluid ${classes.sectionTwo} ${classes.widthEnforcer}`}
+        >
           <div className={classes.insight}>
             <div className={classes.texts}>
               <p className={classes.big}>Get insights on your spendings</p>
