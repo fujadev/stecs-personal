@@ -45,8 +45,8 @@ export default function Footer() {
           <FooterColumn
             title="Contact"
             list={[
-              { name: "+234813472940", link: "" },
-              { name: "support@stecs.ng", link: "" },
+              { name: "+2348066443041", link: "" },
+              { name: "support@stecs.ng", link: "support@stecs.ng" },
             ]}
           />
           <FooterColumn
@@ -62,7 +62,7 @@ export default function Footer() {
       <div className={`${classes.bottom}`}>
         <p className={classes.firstLine}>
           Stecs financial technologies Ltd is registered with CAC with RC Number
-          XXXXXX 
+          1873053
           <br /> 
           Bank services is provided by Providus Bank Limited and
           regulated by the Central Bank of Nigeria.
