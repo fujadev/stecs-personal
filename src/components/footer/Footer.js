@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Footer.module.css";
 import FooterColumn from "./FooterColumn";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -14,15 +15,18 @@ export default function Footer() {
             Available on Play Store and App Store
           </p>
           <div className={`${classes.store}`}>
-            <div className={`${classes.play}`}>
+            <Link
+              to={"https://play.google.com/store/apps/details?id=com.stecsmobile.stecs"}
+              className={`${classes.play}`}
+            >
               <img src="./google-play.png" alt="" />
               <p>Google Play</p>
-            </div>
+            </Link>
 
-            <div className={`${classes.play}`}>
+            <Link className={`${classes.play}`}>
               <img src="./apple.png" alt="" />
               <p>App Store</p>
-            </div>
+            </Link>
           </div>
         </div>
         <div className={`${classes.contact}`}>
@@ -52,9 +56,15 @@ export default function Footer() {
           <FooterColumn
             title="Social Media"
             list={[
-              { name: "Twitter", link: "" },
-              { name: "LinkedIn", link: "" },
-              { name: "Instagram", link: "" },
+              {
+                name: "Twitter",
+                link: "https://twitter.com/Stecsng",
+              },
+              {
+                name: "LinkedIn",
+                link: "https://www.linkedin.com/company/Stecs.ng/",
+              },
+              { name: "Instagram", link: "https://instagram.com/stecs.ng" },
             ]}
           />
         </div>
@@ -63,9 +73,9 @@ export default function Footer() {
         <p className={classes.firstLine}>
           Stecs financial technologies Ltd is registered with CAC with RC Number
           1873053
-          <br /> 
-          Bank services is provided by Providus Bank Limited and
-          regulated by the Central Bank of Nigeria.
+          <br />
+          Bank services is provided by Providus Bank Limited and regulated by
+          the Central Bank of Nigeria.
         </p>
         <p className={classes.secondLine}>
           © 2022 Stecs Ltd. All Rights Reserved

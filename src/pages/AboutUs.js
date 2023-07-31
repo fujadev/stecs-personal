@@ -43,7 +43,7 @@ export default function AboutUs(){
           className={`${classes.hero} ${classes.widthEnforcer} container-fluid`}
         >
           <div className={classes.big}>
-            One app for all your ethical financial needs
+            The Ethical and Interest-Free Money App for Professionals
           </div>
           <div className={classes.small}>
             Stecs is an ethical money app that allows users securely save,
