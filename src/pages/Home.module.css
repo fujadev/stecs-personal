@@ -30,7 +30,7 @@
 .hero .big {
     font-size: 53px;
     font-weight: 700;
-    line-height: 108px;
+    line-height: 80px;
     letter-spacing: 0em;
     text-align: center;
     color: #1F1F1F;
@@ -636,7 +636,7 @@
     color: #DBEAFE;
 }
 
-.sectionSeven .card .details .form button {
+.sectionSeven .card .details .form .button {
     width: 127px;
     height: 52px;
     background: #FFFFFF;
@@ -647,6 +647,10 @@
     font-size: 18px;
     line-height: 28px;
     color: #2AAEDF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 .sectionSeven .card img {
@@ -1230,7 +1234,10 @@
         line-height: 16px;
     }
 
-    .sectionSeven .card .details .form button {
+    .sectionSeven .card .details .form .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 70.5px;
         height: 30.5px;
         font-style: normal;
@@ -1239,6 +1246,7 @@
         line-height: 16px;
         border-radius: 6.87089px;
         padding: 7px 14px;
+        text-decoration: none;
     }
 
     .sectionSeven .card .img1  {

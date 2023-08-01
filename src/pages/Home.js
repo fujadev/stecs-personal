@@ -5,6 +5,7 @@ import Footer from "../components/footer/Footer";
 import Button from "../components/button/Button";
 import TryNow from "../components/tryNow/TryNow";
 import AppContext from "../context/context-api";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const ctx = useContext(AppContext);
@@ -410,12 +411,17 @@ export default function Home() {
               </p>
               <div className={classes.form}>
                 <input type="email" placeholder="Enter your email address" />
-                <button>Join now</button>
+                <Link
+                  to="https://chat.whatsapp.com/IsnaShS0KQp444o6VDlNXP"
+                  className={classes.button}
+                >
+                  Join now
+                </Link>
               </div>
             </div>
             <img
               className={classes.img1}
-              src="./images/sectionSeven/envelop.png"
+              src="./images/sectionSeven/envel.png"
               alt=""
             />
             <img

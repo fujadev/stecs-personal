@@ -3,6 +3,7 @@ import classes from './Community.module.css';
 import Nav from "../components/nav/Nav";
 import Footer from "../components/footer/Footer";
 import Button from "../components/button/Button";
+import { Link } from "react-router-dom";
 
 export default function Community() {
     return (
@@ -70,10 +71,10 @@ export default function Community() {
 
               <div className={classes.button}>
                 <Button buttonSize="big">
-                  <div className={classes.buttonText}>
+                  <Link to="https://chat.whatsapp.com/IsnaShS0KQp444o6VDlNXP" className={classes.buttonText}>
                     <p>Join Stecstars Now</p>
                     <img src="./images/hero/arrow1.png" alt="" />
-                  </div>
+                  </Link>
                 </Button>
               </div>
             </div>
