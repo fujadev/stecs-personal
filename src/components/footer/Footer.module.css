@@ -47,14 +47,14 @@
 .play p {
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 23px;
     color: #FFFFFF;
 }
 
 .play img{
     width: 22.42px;
-    height: 24px;
+    height: 20px;
     display: block;
 }
 .contact {
