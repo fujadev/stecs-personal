@@ -47,7 +47,7 @@ export default function Nav() {
                   className={({ isActive }) => (isActive ? classes.active : "")}
                   to="/about-us"
                 >
-                  About Uss
+                  About Us
                 </NavLink>
                 <NavLink
                   className={({ isActive }) => (isActive ? classes.active : "")}
