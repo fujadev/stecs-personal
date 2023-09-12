@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useLayoutEffect } from "react";
 import classes from './Home.module.css'
 import Nav from "../components/nav/Nav";
 import Footer from "../components/footer/Footer";
@@ -10,6 +10,9 @@ import { Link } from "react-router-dom";
 export default function Home() {
   const ctx = useContext(AppContext);
   const overlayIsActive = ctx.overlayActive;
+   useLayoutEffect(() => {
+     window.scrollTo(0, 0);
+   });
   const showOverlay = ctx.showOverlay;
     // const firstText =
     //   "I never thought banking could be so easy and stress-free until I started using this app. It has completely transformed the way I manage my finances.";

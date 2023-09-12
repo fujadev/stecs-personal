@@ -6,6 +6,7 @@ import Overlay from './components/overlay/Overlay';
 import { Route, Routes } from 'react-router-dom';
 import AppContext from './context/context-api';
 import { useContext } from 'react';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function App() {
     const ctx = useContext(AppContext);
@@ -20,6 +21,7 @@ function App() {
       <Route path='/' element={<Home />} />
       <Route path='/about-us' element={<AboutUs />} />  
       <Route path='/community' element={<Community />} />
+      <Route path='/privacy-policy' element={<PrivacyPolicy />} />
     </Routes>
 
     {isActive && <Overlay /> }

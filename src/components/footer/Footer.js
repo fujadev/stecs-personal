@@ -42,7 +42,7 @@ export default function Footer() {
             title="Legal"
             list={[
               { name: "Terms of use", link: "" },
-              { name: "Privacy policy", link: "" },
+              { name: "Privacy policy", link: "/privacy-policy" },
               { name: "Terms of service", link: "" },
             ]}
           />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import classes from './Community.module.css';
 import Nav from "../components/nav/Nav";
 import Footer from "../components/footer/Footer";
@@ -6,6 +6,9 @@ import Button from "../components/button/Button";
 import { Link } from "react-router-dom";
 
 export default function Community() {
+   useLayoutEffect(() => {
+     window.scrollTo(0, 0);
+   });
     return (
       <>
         <Nav />

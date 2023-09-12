@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useLayoutEffect } from "react";
 import classes from './AboutUs.module.css'
 import Nav from "../components/nav/Nav";
 import Footer from "../components/footer/Footer";
@@ -9,6 +9,9 @@ import TryNow from "../components/tryNow/TryNow";
 
 export default function AboutUs(){
         const ctx = useContext(AppContext);
+        useLayoutEffect(() => {
+          window.scrollTo(0, 0);
+        });
         const isPhone = ctx.isPhone;
         const titleOne = "The One money App for an ethical lifestyle";
         const bodyTextOne =
