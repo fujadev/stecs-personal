@@ -23,4 +23,3 @@ jobs:
         cache: 'npm'
     - run: npm i
     - run: npm run build
-    - run: mv /home/monsur/actions-runner/stecs/stecs-landing/stecs-landing/build /home/monsur/actions-runner/stecs/stecs-landing/stecs-landing/stecs-web
