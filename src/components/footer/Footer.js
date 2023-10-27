@@ -11,12 +11,18 @@ export default function Footer() {
           <div className={`${classes.logo}`}>
             <img src="./footer_logo.png" alt="" />
           </div>
+          <div className={`${classes.logo}`}>
+            <img className="mt-5" src="./ndpr.png" alt="" />
+          </div>
+
           <p className={`${classes.appText}`}>
             Available on Play Store and App Store
           </p>
           <div className={`${classes.store}`}>
             <Link
-              to={"https://play.google.com/store/apps/details?id=com.stecsmobile.stecs"}
+              to={
+                "https://play.google.com/store/apps/details?id=com.stecsmobile.stecs"
+              }
               className={`${classes.play}`}
             >
               <img src="./google-play.png" alt="" />
