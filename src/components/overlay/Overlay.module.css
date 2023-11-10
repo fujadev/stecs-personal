@@ -70,7 +70,6 @@ p {
 
 .iosQr {
   width: 150px;
-  border-radius: 8px;
 }
 .androidText {
   padding-bottom: 10px;
@@ -78,7 +77,6 @@ p {
 
 .androidQr {
   width: 150px;
-  border-radius: 8px;
 }
 
 .iosBarcodeContainer {
