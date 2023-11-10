@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import classes from "./Overlay.module.css";
 import AppContext from "../../context/context-api";
-import Button from "../button/Button";
-import { Link } from "react-router-dom";
+// import Button from "../button/Button";
+// import { Link } from "react-router-dom";
 
 export default function Overlay() {
   const ctx = useContext(AppContext);
