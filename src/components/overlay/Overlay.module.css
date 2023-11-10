@@ -278,7 +278,7 @@ input:focus {
   .card {
     width: 325px;
     top: 70px;
-    padding: 40px 24px;
+    /* padding: 40px 24px; */
     text-align: center;
     border-radius: 12px;
   }
