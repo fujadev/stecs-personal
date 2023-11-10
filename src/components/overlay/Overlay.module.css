@@ -29,11 +29,16 @@
   position: absolute;
   top: 60px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 }
 
 .cardBody {
   padding: 43px 69px;
+}
+@media screen and (max-width: 768px) {
+  .cardBody {
+    padding: 10px;
+  }
 }
 
 .cardHeader {
@@ -50,6 +55,12 @@ h1 {
   margin-bottom: 16px;
 }
 
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+}
+
 p {
   color: #696969;
   font-size: 18px;
@@ -64,6 +75,13 @@ p {
   align-self: center;
   margin-bottom: 24px;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .cardImageContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .iosText {
@@ -104,6 +122,9 @@ span {
   gap: 8px;
   margin-bottom: 14px;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
 }
 
 .cardLabel {
