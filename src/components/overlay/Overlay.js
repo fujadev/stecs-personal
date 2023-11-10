@@ -16,7 +16,7 @@ export default function Overlay() {
       <div className={classes.card}>
         <div className={classes.cardBody}>
           <div className={classes.cardHeader}>
-            <h1>Get the Stecs app</h1>
+            <h1>Get the Stecs appp</h1>
             <p> Scan the QR code below to download the app</p>
           </div>
           <div className={classes.cardImageContainer}>
