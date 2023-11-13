@@ -37,11 +37,11 @@
 }
 @media screen and (max-width: 768px) {
   .cardBody {
-    padding: 10px;
+    padding: 23px 29px;
   }
 }
 
-@media screen and (max-width: 819px) {
+@media screen and (max-width: 820px) {
   .cardBody {
     padding: 23px 39px;
   }
@@ -51,6 +51,12 @@
   text-align: center;
   color: #191c1f;
   margin-bottom: 24px;
+}
+
+@media screen and (max-width: 820px) {
+  .cardHeader {
+    margin-bottom: 14px;
+  }
 }
 
 h1 {
@@ -64,12 +70,16 @@ h1 {
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 28px;
+    margin-bottom: 0;
+    letter-spacing: 0;
   }
 }
 
 @media screen and (max-width: 820px) {
   h1 {
     font-size: 28px;
+    margin-bottom: 0;
+    letter-spacing: 0;
   }
 }
 
@@ -79,6 +89,17 @@ h1 {
   font-weight: 500;
   line-height: 28px;
   letter-spacing: -0.125px;
+}
+
+@media screen and (max-width: 768px) {
+  .subText {
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .subText {
+    line-height: 20px;
+  }
 }
 
 .cardImageContainer {
@@ -92,7 +113,7 @@ h1 {
 @media screen and (max-width: 768px) {
   .cardImageContainer {
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
   }
 }
 
@@ -357,8 +378,8 @@ a {
     width: 325px;
     top: 70px;
     /* padding: 40px 24px; */
-    text-align: center;
-    border-radius: 12px;
+    /* text-align: center;
+    border-radius: 12px; */
   }
 
   .card > div {
@@ -440,6 +461,6 @@ a {
     } */
 
   .button {
-    margin-top: 23px;
+    /* margin-top: 23px; */
   }
 }
