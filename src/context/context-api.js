@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from "react";
 
-
 const AppContext = React.createContext({
   isPhone: "",
   overlayActive: "",
   showOverlay: () => {},
-  closeOverlay: () => {}
+  closeOverlay: () => {},
 });
 
 export const AppProvider = (props) => {
   const [width, setWidth] = useState();
   const [overlayActive, setOverlayActive] = useState();
-  
+
   useEffect(() => {
     const getWindowWidth = () => {
       setWidth(window.innerWidth);
@@ -26,19 +25,19 @@ export const AppProvider = (props) => {
 
   const showOverlay = () => {
     setOverlayActive(true);
-    console.log(overlayActive)
-  }
+    console.log(overlayActive);
+  };
 
   const closeOverlay = () => {
     setOverlayActive(false);
     console.log(overlayActive);
-  }
+  };
 
   const appContext = {
     isPhone,
     overlayActive,
     showOverlay,
-    closeOverlay
+    closeOverlay,
   };
   return (
     <AppContext.Provider value={appContext}>

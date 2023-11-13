@@ -41,7 +41,7 @@
   }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 819px) {
   .cardBody {
     padding: 23px 39px;
   }
@@ -69,7 +69,7 @@ h1 {
 
 @media screen and (max-width: 820px) {
   h1 {
-    font-size: 38px;
+    font-size: 28px;
   }
 }
 
@@ -85,7 +85,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-self: center;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
   text-align: center;
 }
 
@@ -97,9 +97,9 @@ h1 {
 }
 
 .iosText {
-  color: #696969;
+  /* color: #696969; */
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 28px;
   letter-spacing: -0.125px;
   padding-bottom: 10px;
@@ -110,9 +110,9 @@ h1 {
 }
 .androidText {
   padding-bottom: 10px;
-  color: #696969;
+  /* color: #696969; */
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 28px;
   letter-spacing: -0.125px;
 }
@@ -125,10 +125,37 @@ h1 {
 }
 
 .cardText {
-  text-align: center;
+  /* text-align: center;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 28px; */
   margin-bottom: 24px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.decorated {
+  overflow: hidden;
+  text-align: center;
+}
+.decorated > span {
+  position: relative;
+  display: inline-block;
+}
+.decorated > span:before,
+.decorated > span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  border-bottom: 2px solid;
+  width: 591px;
+  margin: 0 20px;
+  color: #f0f0f0;
+}
+.decorated > span:before {
+  right: 100%;
+}
+.decorated > span:after {
+  left: 100%;
 }
 
 span {
@@ -138,12 +165,12 @@ span {
 }
 
 .cardForm {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   gap: 8px;
   margin-bottom: 14px;
-  width: 100%;
+  width: 100%; */
 }
 
 @media screen and (max-width: 768px) {
@@ -188,10 +215,15 @@ input:focus {
   color: #75808a;
 }
 
+a {
+  text-decoration: none;
+}
+
 .btn {
   margin: auto;
   border-radius: 5.7px;
-  background: #2e71d6;
+  background: #2aaedf;
+  /* background: #2e71d6; */
   display: flex;
   width: 100%;
   border: 0;
@@ -202,7 +234,8 @@ input:focus {
 }
 
 .btn:hover {
-  background: #3e84ec;
+  background: rgb(82, 208, 254);
+  transition: 0.3s ease-in;
 }
 
 .btnText {

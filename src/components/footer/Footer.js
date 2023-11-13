@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <div className={`continer-fluid ${classes.section}`}>
+    <div id="footer" className={`continer-fluid ${classes.section}`}>
       <div className={`${classes.top}`}>
         <div className={`${classes.getapp}`}>
           <div className={`${classes.logo}`}>
@@ -29,7 +29,10 @@ export default function Footer() {
               <p>Google Play</p>
             </Link>
 
-            <Link className={`${classes.play}`}>
+            <Link
+              to={"https://apps.apple.com/us/app/stecs/id6451484520"}
+              className={`${classes.play}`}
+            >
               <img src="./apple.png" alt="" />
               <p>App Store</p>
             </Link>

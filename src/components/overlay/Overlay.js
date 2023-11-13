@@ -16,7 +16,7 @@ export default function Overlay() {
       <div className={classes.card}>
         <div className={classes.cardBody}>
           <div className={classes.cardHeader}>
-            <h1>Get the Stecs app</h1>
+            <h1>Get the Stecs App</h1>
             <p className={classes.subText}>
               Scan the QR code below to download the app
             </p>
@@ -40,9 +40,12 @@ export default function Overlay() {
             </div>
           </div>
           <div className={classes.cardText}>
-            <span> or get a download link via SMS</span>
+            {/* <h3 className={classes.title}> or </h3> */}
+            <h2 className={classes.decorated}>
+              <span>or</span>
+            </h2>
           </div>
-          <div className={classes.cardForm}>
+          {/* <div className={classes.cardForm}>
             <div className={classes.cardLabel}>
               <figure>
                 <img className={classes.flag} src="./nigeria-flag.svg" alt="" />
@@ -54,24 +57,27 @@ export default function Overlay() {
               className={classes.input}
               placeholder="Mobile number"
             />
-          </div>
-          <button className={classes.btn}>
-            <span className={classes.btnText}>Get link</span>
+          </div> */}
 
-            <svg
-              className={classes.linkArrow}
-              xmlns="http://www.w3.org/2000/svg"
-              width="21"
-              height="15"
-              viewBox="0 0 21 15"
-              fill="none"
-            >
-              <path
-                d="M1.5 6.6C1.00294 6.6 0.6 7.00294 0.6 7.5C0.6 7.99706 1.00294 8.4 1.5 8.4L1.5 6.6ZM20.1364 8.13639C20.4879 7.78492 20.4879 7.21507 20.1364 6.8636L14.4088 1.13604C14.0574 0.784566 13.4875 0.784566 13.136 1.13604C12.7846 1.48751 12.7846 2.05736 13.136 2.40883L18.2272 7.5L13.136 12.5912C12.7846 12.9426 12.7846 13.5125 13.136 13.864C13.4875 14.2154 14.0574 14.2154 14.4088 13.864L20.1364 8.13639ZM1.5 8.4L19.5 8.4L19.5 6.6L1.5 6.6L1.5 8.4Z"
-                fill="white"
-              />
-            </svg>
-          </button>
+          <a href="#footer">
+            <button onClick={closeOverlayHandler} className={classes.btn}>
+              <span className={classes.btnText}>Download</span>
+
+              <svg
+                className={classes.linkArrow}
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="15"
+                viewBox="0 0 21 15"
+                fill="none"
+              >
+                <path
+                  d="M1.5 6.6C1.00294 6.6 0.6 7.00294 0.6 7.5C0.6 7.99706 1.00294 8.4 1.5 8.4L1.5 6.6ZM20.1364 8.13639C20.4879 7.78492 20.4879 7.21507 20.1364 6.8636L14.4088 1.13604C14.0574 0.784566 13.4875 0.784566 13.136 1.13604C12.7846 1.48751 12.7846 2.05736 13.136 2.40883L18.2272 7.5L13.136 12.5912C12.7846 12.9426 12.7846 13.5125 13.136 13.864C13.4875 14.2154 14.0574 14.2154 14.4088 13.864L20.1364 8.13639ZM1.5 8.4L19.5 8.4L19.5 6.6L1.5 6.6L1.5 8.4Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </a>
         </div>
         {/* <div className={classes.bigText}>Get the Stecs app</div>
         <div className={classes.smallText}>
