@@ -30,7 +30,7 @@
     align-items: center;
     gap: 6px;
     text-decoration: none;
-    color: #ffffff;
+    color: #fff;
 }
 
 @media screen and (max-width: 820px) {
