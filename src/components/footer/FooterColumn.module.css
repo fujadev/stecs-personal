@@ -31,6 +31,12 @@
     text-decoration: none;
 }
 
+@media screen and (max-width: 820px) {
+    .body {
+        gap: 5px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .body {
         gap: 16px;
