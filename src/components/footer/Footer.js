@@ -45,6 +45,7 @@ export default function Footer() {
               { name: "About us", link: "/about-us" },
               { name: "Features", link: "" },
               { name: "Community", link: "/community" },
+              { name: "Sheriah Compliance", link: "/sheriah-compliance" },
             ]}
           />
           <FooterColumn
