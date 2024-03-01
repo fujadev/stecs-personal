@@ -4,9 +4,6 @@
     justify-content: center;
     align-items: center;
 }
-.contentWrapper {
-
-}
 .textWrapper {
    margin: 40px 0;
 }
@@ -24,7 +21,6 @@
 .buttonContainer {
     margin: 40px 0;
 }
-
 .joinButton {
     display: flex;
     align-items: center;
@@ -32,7 +28,6 @@
     text-decoration: none;
     color: #fff;
 }
-
 @media screen and (max-width: 820px) {
     .sheriahImage{
         width: 700px;
