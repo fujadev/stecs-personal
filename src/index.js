@@ -1,12 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
 import { AppProvider } from "./context/context-api";
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
+import ReactGA from "react-ga4";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+ReactGA.initialize("G-8FYF902QYN");
+ReactGA.send({ hitType: "pageview", page: "/my-path", title: "Custom Title" });
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <AppProvider>
     <BrowserRouter>
