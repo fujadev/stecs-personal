@@ -6,6 +6,7 @@ import Button from "../components/button/Button";
 import TryNow from "../components/tryNow/TryNow";
 import AppContext from "../context/context-api";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 export default function Home() {
   const ctx = useContext(AppContext);
@@ -23,6 +24,14 @@ export default function Home() {
   };
   return (
     <>
+      <Helmet>
+        <title>Home</title>
+        <meta
+          name="description"
+          content="Welcome to the landing page of Stecs"
+        />
+        <link rel="canonical" href="/" />
+      </Helmet>
       <Nav />
       <div
         className={`containter-fluid ${classes.hero} ${

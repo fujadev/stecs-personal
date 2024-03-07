@@ -6,6 +6,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import ReactGA from "react-ga4";
+import { HelmetProvider } from "react-helmet-async";
 
 ReactGA.initialize("G-8FYF902QYN");
 ReactGA.send({ hitType: "pageview", page: "/my-path", title: "Custom Title" });
@@ -14,7 +15,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <AppProvider>
     <BrowserRouter>
-      <App />
+      <HelmetProvider>
+        <App />
+      </HelmetProvider>
     </BrowserRouter>
   </AppProvider>
 );
