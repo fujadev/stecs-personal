@@ -21,7 +21,7 @@ export default function Community() {
       <div className={`${classes.container} container-fluid`}>
         <div className={classes.widthEnforcer}>
           <div className={classes.image}>
-            <img
+            {/* <img
               src="./images/community/p2.png"
               alt=""
               className={classes.img2}
@@ -45,7 +45,8 @@ export default function Community() {
               src="./images/community/p3.png"
               alt=""
               className={classes.img3}
-            />
+            /> */}
+            <img src="./footer_logo.png" alt="" className={classes.img3} />
           </div>
           <div className={classes.texts}>
             <p className={classes.header}>

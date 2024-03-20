@@ -44,7 +44,7 @@
 .img3 {
     left: 50%;
     transform: translateX(-50%);
-    bottom: 0;
+    bottom: 50%;
     width: 230px;
 }
 
@@ -109,7 +109,7 @@
 
 @media screen and (max-width: 600px) {
     .container{
-        padding: 113px 24px 155px;
+        padding: 30px 24px 155px;
         gap: 63px;
     }
 

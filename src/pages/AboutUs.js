@@ -116,7 +116,7 @@ export default function AboutUs() {
             width={180}
           />
           <AboutCard
-            title="Satifaction"
+            title="Satisfaction"
             body={text5}
             image={image5}
             color="#EAF6EA"

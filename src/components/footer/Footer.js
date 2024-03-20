@@ -62,6 +62,7 @@ export default function Footer() {
               // { name: "+2348066443041", link: "" },
               { name: "support@stecs.ng", link: "mailto:support@stecs.ng" },
               { name: "hello@stecs.ng", link: "mailto:hello@stecs.ng" },
+              { name: "tel: 02013309146" },
             ]}
           />
           <FooterColumn
@@ -82,14 +83,25 @@ export default function Footer() {
       </div>
       <div className={`${classes.bottom}`}>
         <p className={classes.firstLine}>
-          Stecs financial technologies Ltd is registered with CAC with RC Number
-          1873053
-          <br />
-          Bank services is provided by Providus Bank Limited and regulated by
-          the Central Bank of Nigeria.
-        </p>
-        <p className={classes.secondLine}>
-          © 2022 Stecs Ltd. All Rights Reserved
+          Stecs is a Financial Technology company duly registered with the
+          Corporate Affairs Commission, Nigeria (RC: 1873053) with our office at
+          12F Tola Adewumi Street, TAAT Estate, Maryland, Lagos, Nigeria.
+          Banking services provided in partnership with Providus Bank Limited.
+          It's savings and Investments scheme is duly registered under the
+          Co-operative Societies Laws of Lagos State with registration number
+          LSCS 18966 as Stecs (Alausa) Multipurpose Cooperative Society Limited.
+          Other activities and partnerships are in line with the best ethical
+          practices and the laws of the Federal Republic of Nigeria. Any
+          unauthorized redistribution or reproduction of any copyrighted
+          materials on this website is strictly prohibited. Other product and
+          company names are trademarks of their respective owners. This website
+          contains simulated images; actual appearance may vary.
+          <p />
+          <div>
+            <p className={classes.copyright}>
+              © 2024 Stecs Ltd. All Rights Reserved
+            </p>
+          </div>
         </p>
       </div>
     </div>
