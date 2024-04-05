@@ -374,8 +374,8 @@ export default function Home() {
               </p>
             </div>
             <div className={classes.link}>
-              <p>Read article</p>
-              <img src="./images/sectionSix/blue-arrow.png" alt="" />
+              {/* <p>Read article</p> */}
+              {/* <img src="./images/sectionSix/blue-arrow.png" alt="" /> */}
             </div>
             <img src="./images/sectionSix/safe-blue.png" alt="" />
           </div>
@@ -388,8 +388,8 @@ export default function Home() {
               </p>
             </div>
             <div className={classes.link}>
-              <p>Read article</p>
-              <img src="./images/sectionSix/blue-arrow.png" alt="" />
+              {/* <p>Read article</p> */}
+              {/* <img src="./images/sectionSix/blue-arrow.png" alt="" /> */}
             </div>
             <img src="./images/sectionSix/qr.png" alt="" />
           </div>
