@@ -35,15 +35,16 @@ export default function Nav() {
                 to="/"
               >
                 Product
-              </NavLink>
-              <NavLink
+              </NavLink> */}
+              {/* <NavLink
                 className={({ isActive }) => (isActive ? classes.active : "")}
-                to="/"
+                to="/learn"
               >
                 Learn
               </NavLink> */}
               <NavLink
-                className={({ isActive }) => (isActive ? classes.active : "")}
+                classNa
+                me={({ isActive }) => (isActive ? classes.active : "")}
                 to="/about-us"
               >
                 About Us
@@ -64,9 +65,8 @@ export default function Nav() {
 
           {isPhone && (
             <div
-              className={`${classes.hamburger} ${
-                showNav ? classes.active : ""
-              }`}
+              className={`${classes.hamburger} ${showNav ? classes.active : ""
+                }`}
               onClick={() => setShowNav((prev) => !prev)}
             >
               <div></div>
@@ -79,8 +79,8 @@ export default function Nav() {
       {isPhone && showNav && (
         <div className={`${classes.dropdown}`}>
           <Link to="/">Home</Link>
-          {/* <Link to="/">Product</Link>
-            <Link to="/">Learn</Link> */}
+          {/* <Link to="/">Product</Link> */}
+          <Link to="/learn">Learn</Link>
           <Link to="/about-us">About Us</Link>
           <Link to="/community">Community</Link>
           <div className={classes.btn} onClick={buttonClickHandler}>

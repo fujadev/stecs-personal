@@ -1,20 +1,20 @@
 .nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
+      background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
 }
 
 .nav_width {
-    max-width: 900px;
+    /* max-width: 900px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    gap: 14%;
     width: 100%;
-    background: #FFFFFF;
+    /* background: #FFFFFF; */
 }
 
 .links {

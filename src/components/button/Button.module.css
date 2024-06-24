@@ -1,9 +1,9 @@
 .button {
     background: #2AAEDF !important;
     color: white;
-    align-items: center;
+    /* align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: center; */
     cursor: pointer;
 
 }
@@ -19,8 +19,8 @@
 }
 
 .small {
-    min-width: 144px;
-    height: 40px;
+    /* min-width: 144px;
+    height: 40px; */
     border-radius: 3px;
     padding: 13px 28px 13px 28px;
     font-size: 17px;

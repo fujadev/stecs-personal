@@ -108,7 +108,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .container{
+    .container {
         padding: 30px 24px 155px;
         gap: 63px;
     }
@@ -119,7 +119,11 @@
         overflow: hidden;
     }
 
-    .img1, .img2, .img3, .img4, .img5 {
+    .img1,
+    .img2,
+    .img3,
+    .img4,
+    .img5 {
         width: 100px;
         height: auto;
     }
@@ -148,3 +152,91 @@
 }
 
 
+/* 
+.loginFormWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.welcomeImage {
+    width: 768px;
+    position: absolute;
+    top: -50px;
+    z-index: -1;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 32px;
+    line-height: 24px;
+}
+
+.header p {
+    font-size: 16px;
+    color: #475467;
+}
+
+.formContainer {
+    margin-top: 32px;
+}
+
+.inputField {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.inputField label {
+    margin-bottom: 6px;
+}
+
+.inputField input {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.eyeIcon {
+    position: absolute;
+    right: 20px;
+    bottom: 12px;
+}
+
+.reminderContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.reminder {
+    font-size: 14px;
+    color: #818688;
+    margin-left: 8px;
+}
+
+.formButton {
+    background-color: #2BAEDF;
+    border-radius: 16px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 13.5px 148.5px;
+    border: 0;
+}
+
+.loginLinkMessage {
+    margin-top: 24px;
+    color: #818688;
+}
+
+.loginLinkMessage span {
+    color: #2BAEDF;
+    font-size: 14px;
+} */

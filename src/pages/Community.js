@@ -1,15 +1,51 @@
-import React, { useLayoutEffect } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import classes from "./Community.module.css";
 import Nav from "../components/nav/Nav";
 import Footer from "../components/footer/Footer";
 import Button from "../components/button/Button";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import axios from "axios";
+import { IoEyeOutline, IoEyeOffOutline } from "react-icons/io5";
+import welcomebackground from "../assets/media/welcomebackground.png";
 
 export default function Community() {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   });
+
+  // const [showPassword, setShowPassword] = useState(false);
+
+  // const handleSignUp = (values, { setSubmitting }) => {
+  //   axios
+  //     .post("https://strong.stecs.ng/api/sign-up")
+  //     .then((response) => {
+  //       console.log("Sign-up successful:", response.data);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Sign-up error:", error);
+  //     })
+  //     .finally(() => {
+  //       setSubmitting(false);
+  //     });
+  // };
+
+  // const handleSignUp = (values, { setSubmitting }) => {
+  //   console.log("Form values:", values);
+  //   axios
+  //     .post("https://strong.stecs.ng/api/sign-up", values)
+  //     .then((response) => {
+  //       console.log("Sign-up successful:", response.data);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Sign-up error:", error);
+  //     })
+  //     .finally(() => {
+  //       setSubmitting(false);
+  //     });
+  // };
+
   return (
     <>
       <Helmet>
@@ -56,7 +92,7 @@ export default function Community() {
               Are you confused about how to start investing and building wealth
               the ethical way? Do you need first-hand information about safe and
               affordable local and foreign ethical investments? Look no further.
-              Stecstars is the right place to be. 
+              Stecstars is the right place to be.
             </p>
             <p className={classes.body}>
               Stecstars has been created to bring together individuals who are
@@ -95,5 +131,78 @@ export default function Community() {
       </div>
       <Footer />
     </>
+    // <div className={classes.loginFormWrapper}>
+    //   <img className={classes.welcomeImage} src={welcomebackground} />
+    //   <div className={classes.welcomeMessage}>
+    //     <div className={classes.header}>
+    //       <h1>Welcome to Stecs</h1>
+    //       <p>Please Sign in to your account.</p>
+    //     </div>
+    //     <div className={classes.formContainer}>
+    //       <Formik
+    //         initialValues={{ email: "", password: "" }}
+    //         validate={(values) => {
+    //           const errors = {};
+    //           if (!values.email) {
+    //             errors.email = "Required";
+    //           } else if (
+    //             !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+    //           ) {
+    //             errors.email = "Invalid email address";
+    //           }
+    //           if (!values.password) {
+    //             errors.password = "Required";
+    //           }
+    //           return errors;
+    //         }}
+    //         onSubmit={handleSignUp}
+    //       >
+    //         {({ isSubmitting }) => (
+    //           <Form>
+    //             <div className={classes.inputField}>
+    //               <label htmlFor="email">Email</label>
+    //               <Field
+    //                 type="email"
+    //                 name="email"
+    //                 placeholder="Enter your email"
+    //               />
+    //               <ErrorMessage name="email" component="div" />
+    //             </div>
+    //             <div className={classes.inputField}>
+    //               <label htmlFor="password">Password</label>
+    //               <Field
+    //                 type={showPassword ? "text" : "password"}
+    //                 name="password"
+    //                 placeholder="Enter your password"
+    //               />
+    //               <div className={classes.eyeIcon}>
+    //                 {showPassword ? (
+    //                   <IoEyeOutline onClick={() => setShowPassword(false)} />
+    //                 ) : (
+    //                   <IoEyeOffOutline onClick={() => setShowPassword(true)} />
+    //                 )}
+    //               </div>
+    //               <ErrorMessage name="password" component="div" />
+    //             </div>
+    //             <div className={classes.reminderContainer}>
+    //               <Field type="checkbox" name="checked" />
+    //               <p className={classes.reminder}>Remember for 30 days</p>
+    //             </div>
+    //             <button
+    //               className={classes.formButton}
+    //               type="submit"
+    //               disabled={isSubmitting}
+    //             >
+    //               Sign Up
+    //             </button>
+    //           </Form>
+    //         )}
+    //       </Formik>
+    //     </div>
+    //     <p className={classes.loginLinkMessage}>
+    //       Already have an account? <span>Login</span>
+    //     </p>
+    //   </div>
+    // </div>
   );
 }

@@ -1,0 +1,297 @@
+.container {
+    /* padding: 112px 0 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.widthEnforcer {
+    /* max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    /* gap: 57px; */
+    padding: 0 80px;
+}
+
+.texts {
+    /* display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+    align-items: flex-start; */
+    text-align: center;
+    margin-bottom: 195.8px;
+}
+.texts p {
+    /* text-align: start; */
+}
+
+.pageHeader {
+    font-size: 76px;
+    line-height: 96.9px;
+    margin-top: 98px;
+    color: #0A1930;
+}
+
+
+.header {
+    font-weight: 700;
+    text-align: center;
+    color: #191C1F;
+}
+
+.controlContainer {
+    margin-top: 170px;
+    margin-bottom: 206.71px;
+}
+
+
+.takeControl {
+    font-size: 57px;
+    margin-bottom: 18px;
+}
+
+.body {
+    /* margin-top: 24px; */
+    /* font-style: normal;
+    font-weight: 400;
+    /* font-size: 16px; */
+    text-align: center;
+    color: #696969;
+    font-weight: 500;
+}
+
+.forProducts {
+    font-size: 22px;
+   line-height: 28px;
+}
+
+.blogContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloghHeader {
+    font-weight: 700;
+    font-size: 34px;
+    color: #022B69;
+    letter-spacing: -0.7px;
+    margin-bottom: 46px;
+}
+
+
+.getStarted {
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.buttonContainer {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.buttonText {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        padding: 30px 24px 50px;
+        gap: 63px;
+    }
+
+    .image {
+        height: 150px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .img1, .img2, .img3, .img4, .img5 {
+        width: 100px;
+        height: auto;
+    }
+
+    .header {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .body {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .button {
+        margin-top: 23px;
+    }
+
+    .takeControl {
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    .buttonContainer {
+        margin-top: 30px;
+       
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .bloghHeader {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .blogContainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+      .blogContainer {
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .widthEnforcer {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .texts {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .controlContainer {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .pageHeader {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+    @media screen and (max-width: 1024px) {
+        .texts {
+            margin-bottom: 50px;
+        }
+        .controlContainer {
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+        .takeControl {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .buttonContainer {
+            margin-top: 30px;
+        }
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+    }
+    .widthEnforcer {
+        padding: 0 40px;
+    }
+    .pageHeader {
+        font-size: 32px;
+        margin-top: 40px;
+    }
+    .texts {
+        margin-bottom: 50px;
+    }
+    .blogContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .bloghHeader {
+        font-size: 34px;
+        margin-bottom: 26px;
+    }
+    .controlContainer {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .takeControl {
+        font-size: 28px;
+        margin-bottom: 10px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* .container {
+    }
+    .widthEnforcer {
+        padding: 0 40px;
+    }
+    .pageHeader {
+        font-size: 32px;
+    }
+    .texts {
+        margin-bottom: 50px;
+    }
+    .blogContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .bloghHeader {
+        font-size: 34px;
+        margin-bottom: 26px;
+    }
+    .controlContainer {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .takeControl {
+        font-size: 28px;
+        margin-bottom: 10px;
+    } */
+    .widthEnforcer {
+        padding: 0;
+    }
+    .blogContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .bloghHeader {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .takeControl {
+        font-size: 18px;
+        margin-bottom: 10px;
+    } 
+}

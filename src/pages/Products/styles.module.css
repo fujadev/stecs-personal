@@ -1,0 +1,534 @@
+.heroContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 172px;
+}
+
+@media screen and (max-width: 1024px) {
+    .heroContainer {
+        margin-top: 50px;
+        flex-direction: column;
+        text-align: center;
+        gap: 60px;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .heroContainer {
+
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hero {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.hero h1 {
+    font-weight: bold;
+    font-size: 51px;
+    max-width: 611px;
+}
+
+@media screen and (max-width: 1024px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+
+
+.hero p {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 576px) {
+    .hero h1 {
+        font-size: 20px;
+        line-height: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+
+.myButtonContainer {
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 576px) {
+    .myButtonContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+.downloadButton {
+    width: 228px;
+    height: 60px;
+    font-size: 18;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: #2BAEDF;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+
+.downloadButton a {
+    color: #fff;
+
+}
+
+
+
+.holdingPhoneBackground {
+    background: #D3ECF8;
+    height: 929px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-radius: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .holdingPhoneBackground {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.holdingPhone {
+    width: 516px;
+    height: 716px;
+    /* position: absolute;
+    bottom: 0;
+    right: 0; */
+}
+
+@media screen and (max-width: 768px) {
+    .holdingPhone {
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+    }
+}
+
+
+.productGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 161px;
+}
+
+.productGrid h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    align-self: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .productGrid {
+        grid-template-columns: repeat(1, 1fr);
+        /* justify-items: center; */
+    }
+
+    .productGrid h2 {
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .productGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .productGrid {
+        margin-bottom: 50px;
+    }
+
+    .productGrid h2 {
+        font-size: 18px;
+    }
+}
+
+.productImagecontainer {
+    width: 100%;
+    background: #233C8B;
+    height: 457px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 16px;
+    position: relative;
+}
+
+.productsimage2 {
+    max-width: none;
+    height: 528px;
+}
+
+.pageContainer {
+    padding: 0 30px;
+}
+
+.store {
+    display: flex;
+    gap: 9px;
+}
+
+@media screen and (max-width: 576px) {
+    .store {
+        flex-direction: column;
+    }
+}
+
+
+.downloadContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 99px;
+}
+
+@media screen and (max-width: 1024px) {
+    .downloadContainer {
+        margin-top: 30px;
+    }
+}
+
+.play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 228px;
+    height: 62px;
+    text-decoration: none;
+    border-radius: 16px;
+    background: #233C8B;
+}
+
+.play p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.play img {
+    width: 22.42px;
+    height: 20px;
+    display: block;
+}
+
+.discover {
+    text-align: center;
+    margin-bottom: 48px;
+    margin-top: 178px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+    .discover {
+        margin-top: 78px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .discover {
+        margin-top: 50px;
+        font-size: 18px;
+    }
+}
+
+
+.customerCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 200px;
+    align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .customerCardContainer {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .customerCardContainer {
+        margin-bottom: 100px;
+    }
+
+    .customerImage {
+        /* width: 300px; */
+        width: 70px;
+    }
+
+    .customerComment {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .customerImage {}
+}
+
+
+.customerCard {
+    background: #F0F2F2;
+    width: 600px;
+    height: 340px;
+    padding: 40px 39px;
+    border-radius: 16px;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .customerCard {
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .customerCard {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+.textAndImageContainer {
+    display: flex;
+}
+
+
+@media screen and (max-width: 540px) {
+    .textAndImageContainer {
+        flex-direction: column-reverse;
+    }
+
+    .customerImage {
+        /* width: 300px; */
+    }
+}
+
+.customerComment {
+    margin-right: 34px;
+}
+
+@media screen and (max-width: 576px) {
+    .customerComment {
+        /* text-align: center; */
+        margin-right: 0;
+        margin-top: 20px;
+    }
+}
+
+.customerName {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 540px) {
+    .customerName {
+        font-size: 16px;
+        /* text-align: center; */
+    }
+}
+
+.vaultContainer {
+    background: #2AAEDF;
+    width: 100%;
+    border-radius: 16px;
+    height: 422px;
+    margin-bottom: 462px;
+    padding: 0 58px;
+}
+
+@media screen and (max-width: 1024px) {
+    .vaultContainer {
+        margin-bottom: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .vaultContainer {
+        margin-bottom: 250px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .vaultContainer {
+        height: 870px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+}
+
+.vaultCardContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 576px) {
+    .vaultCardContainer {
+        display: block;
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .vaultCardContainer {
+        column-gap: 10px;
+        margin-bottom: 300px;
+    }
+}
+
+.secureText {
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    padding-top: 76px;
+    padding-bottom: 70px;
+}
+
+@media screen and (max-width: 576px) {
+    .secureText {
+        text-align: center;
+        color: #fff;
+        font-size: 22px;
+        padding-top: 56px;
+        padding-bottom: 50px;
+    }
+
+}
+
+.vaultCard {
+    background: #F0F2F2;
+    width: 382px;
+    height: 529px;
+    border-radius: 16px;
+    text-align: center;
+    padding: 52px 78px 23px 78px;
+    display: flex;
+    flex-direction: column;
+}
+
+.vaultCard h4 {
+    font-weight: 600;
+}
+
+.vaultCard p {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+    .vaultCard {
+        padding: 20px 10px;
+        height: 350px;
+
+    }
+
+    .vaultCard h4 {
+        font-size: 18px;
+    }
+
+    .vaultCard p {
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .vaultCard {
+        padding: 20px;
+        width: 100%;
+        max-height: 200px;
+        margin-bottom: 30px;
+    }
+}
+
+.savingsVaultCard {
+    background: #F0F2F2;
+    width: 382px;
+    height: 529px;
+    border-radius: 16px;
+    text-align: center;
+    padding: 52px 78px 23px 78px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* @media screen and (max-width: 576px) {
+    .savingsvaultCard {
+        display: block;
+    }
+} */
+
+.savingsVaultCard h4 {
+    font-weight: 600;
+}
+
+.savingsVaultCard p {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+    .savingsVaultCard {
+        padding: 20px 10px;
+        height: 350px;
+
+    }
+
+    .savingsVaultCard h4 {
+        font-size: 18px;
+    }
+
+    .savingsVaultCard p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .savingsVaultCard {
+        padding: 20px;
+        width: 100%;
+        max-height: 200px;
+        margin-bottom: 30px;
+        align-items: start;
+    }
+}
