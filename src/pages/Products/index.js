@@ -65,7 +65,7 @@ export default function Products() {
                 Download
               </MyButton>
               <MyButton href="#download" className={classes.signUpButton}>
-                <Link to="/community">Sign Up</Link>
+                <Link to="/register">Sign Up</Link>
               </MyButton>
             </div>
           </div>

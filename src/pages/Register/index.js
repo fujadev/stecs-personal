@@ -140,9 +140,9 @@ export default function Register() {
               )}
             </Formik>
           </div>
-          <p className={classes.loginLinkMessage}>
+          {/* <p className={classes.loginLinkMessage}>
             Already have an account? <span>Login</span>
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
