@@ -55,6 +55,13 @@ export default function Nav() {
               >
                 Community
               </NavLink>
+              <NavLink
+                classNa
+                me={({ isActive }) => (isActive ? classes.active : "")}
+                to="/products"
+              >
+                Products
+              </NavLink>
             </div>
           )}
           {!isPhone && (
@@ -83,6 +90,7 @@ export default function Nav() {
           <Link to="/learn">Learn</Link>
           <Link to="/about-us">About Us</Link>
           <Link to="/community">Community</Link>
+          <Link to="/products">Products</Link>
           <div className={classes.btn} onClick={buttonClickHandler}>
             <p>Get Started</p>
           </div>
