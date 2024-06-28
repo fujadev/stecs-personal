@@ -55,13 +55,13 @@ export default function Nav() {
               >
                 Community
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 classNa
                 me={({ isActive }) => (isActive ? classes.active : "")}
                 to="/products"
               >
                 Products
-              </NavLink>
+              </NavLink> */}
             </div>
           )}
           {!isPhone && (

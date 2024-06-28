@@ -40,7 +40,7 @@ export default function LearnDetails() {
         </div>
 
         <div className={styles.imageContainer}>
-          <img className={styles.image} src={blogImage} alt="" />
+          <img className={styles.image} src={blogImage} alt="blog" />
         </div>
 
         <div className={styles.textContent}>
@@ -83,7 +83,7 @@ export default function LearnDetails() {
           <img
             className={styles.iphoneImage}
             src={iphoneImage}
-            alt="Description of the image"
+            alt="iphone"
           />
         </div>
 
@@ -106,7 +106,7 @@ export default function LearnDetails() {
         </div>
 
         <div className={styles.videoContainer}>
-          <img src={videoplaceholder} alt="" className={styles.video} />
+          <img src={videoplaceholder} alt="video" className={styles.video} />
         </div>
 
         <div className={styles.textContent}>
@@ -160,7 +160,7 @@ export default function LearnDetails() {
                 className={styles.buttonText}
               >
                 <p>Join Stecstars Now</p>
-                <img src="./images/hero/arrow1.png" alt="" />
+                <img src="./images/hero/arrow1.png" alt="arrow" />
               </Link>
             </Button>
           </div>

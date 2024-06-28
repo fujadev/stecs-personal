@@ -2,7 +2,6 @@ import React, { useLayoutEffect } from "react";
 import classes from "./styles.module.css";
 import Nav from "../../components/nav/Nav";
 import Footer from "../../components/footer/Footer";
-import Button from "../../components/button/Button";
 import { Link } from "react-router-dom";
 import ProductCards from "../../components/productCards";
 import MyButton from "../../components/myButton"
@@ -14,7 +13,7 @@ export default function Products() {
 
   const holdingphone = require("../../assets/media/holdingphone.png");
   const houseicon = require("../../assets/media/houseicon.png");
-  const productsimage2 = require("../../assets/media/productsimage2.png");
+  // const productsimage2 = require("../../assets/media/productsimage2.png");
   const customerImageFrame = require("../../assets/media/customer-image-frame.png")
 
   const products = [
@@ -143,21 +142,21 @@ export default function Products() {
           <div className={classes.customerCard}>
             <div className={classes.textAndImageContainer}>
               <p className={classes.customerComment}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              <img className={classes.customerImage} src={customerImageFrame} />
+              <img className={classes.customerImage} src={customerImageFrame} alt="customer" />
             </div>
             <p className={classes.customerName}>Khadijat</p>
           </div>
           <div className={classes.customerCard}>
             <div className={classes.textAndImageContainer}>
               <p className={classes.customerComment}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              <img className={classes.customerImage} src={customerImageFrame} />
+              <img className={classes.customerImage} src={customerImageFrame} alt="customer" />
             </div>
             <p className={classes.customerName}>Khadijat</p>
           </div>
           <div className={classes.customerCard}>
             <div className={classes.textAndImageContainer}>
               <p className={classes.customerComment}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              <img className={classes.customerImage} src={customerImageFrame} />
+              <img className={classes.customerImage} src={customerImageFrame} alt="customer" />
             </div>
             <p className={classes.customerName}>Khadijat</p>
           </div>

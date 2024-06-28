@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from "react";
+import React, { useLayoutEffect } from "react";
 import classes from "./styles.module.css";
 import circlechecklist from "../../assets/media/circlechecklist.png";
 

@@ -1,14 +1,10 @@
-import React, { useLayoutEffect, useState } from "react";
+import React, { useLayoutEffect } from "react";
 import classes from "./Community.module.css";
 import Nav from "../components/nav/Nav";
 import Footer from "../components/footer/Footer";
 import Button from "../components/button/Button";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import axios from "axios";
-import { IoEyeOutline, IoEyeOffOutline } from "react-icons/io5";
-import welcomebackground from "../assets/media/welcomebackground.png";
 
 export default function Community() {
   useLayoutEffect(() => {

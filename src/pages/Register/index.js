@@ -19,7 +19,7 @@ const validationSchema = Yup.object().shape({
     .label("Password")
     .matches(/[A-Z]/, "Password must contain at least one uppercase character")
     .matches(
-      /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/,
+      /[!@#$%^&*()_+\-=[\]{};':"|,.<>/?]/,
       "Password must contain at least one special character"
     )
     .min(8),
@@ -41,10 +41,10 @@ export default function Register() {
       <div className={classes.wrapper}>
         <div className={classes.logo}>
           <Link to='/'>
-            <img src="./stecs.svg" alt="" />
+            <img src="./stecs.svg" alt="logo" />
           </Link>
         </div>
-        <img className={classes.backgroundImage} src={welcomebackground} />
+        <img className={classes.backgroundImage} src={welcomebackground} alt="welcome" />
         <div className={classes.container}>
           <div className={classes.header}>
             <h1>Welcome to Stecs</h1>

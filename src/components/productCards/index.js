@@ -1,8 +1,6 @@
 import React from "react";
 import classes from "./styles.module.css";
 
-const houseicon = require("../../assets/media/houseicon.png");
-
 const ProductCards = ({
   background,
   headingText,
