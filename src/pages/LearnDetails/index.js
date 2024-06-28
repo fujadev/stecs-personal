@@ -5,7 +5,6 @@ import Footer from "../../components/footer/Footer";
 import Button from "../../components/button/Button";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-// import BlogBox from "../../components/blogBox";
 import blogImage from "../../assets/media/blogImage.png";
 import iphoneImage from "../../assets/media/iphoneImage.png";
 import videoplaceholder from "../../assets/media/videoplaceholder.png";
