@@ -1,6 +1,5 @@
 .myButton {
     all: unset;
-    background: #2BAEDF;
     padding: 16px 70px;
     color: #fff;
     font-size: 18;
@@ -9,13 +8,21 @@
     margin-right: 20px;
 }
 
+.primaryButton {
+    background: #EF6C00;
+}
+
+.secondaryButton {
+    background: #233C8B;
+}
+
 .myButton a {
     color: #fff;
 }
 
 .signUpButton {
     border: 1px solid #233C8B;
-    background: transparent;
-    color: #233C8B;
+    /* background: transparent; */
+    /* color: #233C8B; */
     text-decoration: none;
 }

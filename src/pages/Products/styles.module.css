@@ -225,6 +225,13 @@
     height: 62px;
     text-decoration: none;
     border-radius: 16px;
+}
+
+.playPrimary {
+    background: #EF6C00;
+}
+
+.playSecondary {
     background: #233C8B;
 }
 
@@ -264,18 +271,18 @@
 }
 
 
-.customerCardContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 200px;
-    align-items: center;
-}
+.customerCardContainer {}
 
 @media screen and (max-width: 1024px) {
     .customerCardContainer {
         justify-content: center;
     }
+}
+
+.customerImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
 }
 
 @media screen and (max-width: 576px) {
@@ -284,12 +291,11 @@
     }
 
     .customerImage {
-        /* width: 300px; */
-        width: 70px;
+        /* width: 70px; */
     }
 
     .customerComment {
-        font-size: 12px;
+        font-size: 2px;
     }
 }
 
@@ -301,14 +307,14 @@
 
 .customerCard {
     background: #F0F2F2;
-    width: 600px;
-    height: 340px;
-    padding: 40px 39px;
+    /* width: 600px;
+    height: 340px; */
+    padding: 20px;
     border-radius: 16px;
     margin-bottom: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
 }
 
 
@@ -324,17 +330,19 @@
     .customerCard {
         width: 100%;
         padding: 20px;
+        /* object-fit: contain; */
     }
 }
 
 .textAndImageContainer {
     display: flex;
+    gap: 10px;
 }
 
 
 @media screen and (max-width: 540px) {
     .textAndImageContainer {
-        flex-direction: column-reverse;
+        /* flex-direction: column-reverse; */
     }
 
     .customerImage {
@@ -343,21 +351,22 @@
 }
 
 .customerComment {
-    margin-right: 34px;
+    /* margin-right: 34px; */
+    font-size: 12px;
 }
 
 @media screen and (max-width: 576px) {
     .customerComment {
         /* text-align: center; */
-        margin-right: 0;
-        margin-top: 20px;
+        /* margin-right: 0;
+        margin-top: 20px; */
     }
 }
 
 .customerName {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 700;
-    margin-top: 40px;
+    margin-top: 53px;
 }
 
 @media screen and (max-width: 540px) {
@@ -376,6 +385,7 @@
     padding: 0 58px;
 }
 
+
 @media screen and (max-width: 1024px) {
     .vaultContainer {
         margin-bottom: 200px;
@@ -384,15 +394,16 @@
 
 @media screen and (max-width: 768px) {
     .vaultContainer {
-        margin-bottom: 250px;
+        /* margin-bottom: 250px; */
     }
 }
 
 @media screen and (max-width: 576px) {
     .vaultContainer {
-        height: 870px;
-        padding: 10px;
-        margin-bottom: 20px;
+        /* height: 870px; */
+        height: auto;
+        padding: 10px 10px 0px 10px;
+        /* margin-bottom: 20px; */
     }
 
 }
@@ -439,12 +450,29 @@
 .vaultCard {
     background: #F0F2F2;
     width: 382px;
-    height: 529px;
+    height: 100%;
+    /* max-height: 529px; */
     border-radius: 16px;
     text-align: center;
-    padding: 52px 78px 23px 78px;
+    padding: 38px 78px;
     display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: column;
+}
+
+.vaultCardImage {
+    /* height: 295px; */
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width:1024px) {
+    .vaultCardImage {
+        /* height: 150px; */
+        width: 150px;
+    }
 }
 
 .vaultCard h4 {
@@ -476,7 +504,7 @@
     .vaultCard {
         padding: 20px;
         width: 100%;
-        max-height: 200px;
+        /* max-height: 200px; */
         margin-bottom: 30px;
     }
 }
@@ -484,13 +512,15 @@
 .savingsVaultCard {
     background: #F0F2F2;
     width: 382px;
-    height: 529px;
+    /* height: 529px; */
     border-radius: 16px;
     text-align: center;
-    padding: 52px 78px 23px 78px;
+    padding: 38px 78px;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
 }
 
 /* @media screen and (max-width: 576px) {
@@ -527,8 +557,8 @@
     .savingsVaultCard {
         padding: 20px;
         width: 100%;
-        max-height: 200px;
+        /* max-height: 200px; */
         margin-bottom: 30px;
-        align-items: start;
+        align-items: center;
     }
 }

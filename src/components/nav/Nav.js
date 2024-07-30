@@ -53,7 +53,7 @@ export default function Nav() {
                 className={({ isActive }) => (isActive ? classes.active : "")}
                 to="/community"
               >
-                Community2
+                Community
               </NavLink>
               {/* <NavLink
                 classNa

@@ -5,6 +5,16 @@ import Footer from "../../components/footer/Footer";
 import { Link } from "react-router-dom";
 import ProductCards from "../../components/productCards";
 import MyButton from "../../components/myButton"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import { Navigation, Pagination, Autoplay, A11y } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css/autoplay';
+
+
 
 export default function Products() {
   useLayoutEffect(() => {
@@ -14,7 +24,15 @@ export default function Products() {
   const holdingphone = require("../../assets/media/holdingphone.png");
   const houseicon = require("../../assets/media/houseicon.png");
   // const productsimage2 = require("../../assets/media/productsimage2.png");
-  const customerImageFrame = require("../../assets/media/customer-image-frame.png")
+  const customerImage = require("../../assets/media/lily-advisor.webp");
+  const customerImage2 = require("../../assets/media/customerImage.png");
+  const customerImage1 = require("../../assets/media/nikolas-advisor.webp");
+  const customerImage3 = require("../../assets/media/laurent-advisor.webp");
+  const productRegular = require("../../assets/media/product-regular.png");
+  const productDollar = require("../../assets/media/product-dollar.png");
+  const productSaving = require("../../assets/media/product-saving.png");
+
+
 
   const products = [
     {
@@ -47,6 +65,29 @@ export default function Products() {
     },
   ];
 
+  const customerCards = [
+    {
+      name: 'Khadijat Chijioke',
+      image: `${customerImage}`,
+      comments: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
+    },
+    {
+      name: 'Falimo Rogders',
+      image: `${customerImage1}`,
+      comments: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
+    },
+    {
+      name: 'Sumba Munts',
+      image: `${customerImage2}`,
+      comments: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
+    },
+    {
+      name: 'Gallogha Remba',
+      image: `${customerImage3}`,
+      comments: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
+    },
+  ]
+
   return (
     <>
       <Nav />
@@ -60,10 +101,10 @@ export default function Products() {
               Solutions
             </p>
             <div className={classes.myButtonContainer}>
-              <MyButton href="#download">
+              <MyButton href="#download" primaryButton>
                 Download
               </MyButton>
-              <MyButton href="#download" className={classes.signUpButton}>
+              <MyButton href="#download" className={`${classes.play} ${classes.playSecondary}`}>
                 <Link to="/register">Sign Up</Link>
               </MyButton>
             </div>
@@ -96,29 +137,33 @@ export default function Products() {
           </p>
           <div className={classes.vaultCardContainer}>
             <div className={classes.vaultCard}>
-              <h4>Regular Vault</h4>
-              <p>Our Regular Vault offers a secure place to store your wealth while providing easy access when needed.</p>
+              <div>
+                <h4>Regular Vault</h4>
+                <p>Our Regular Vault offers a secure place to store your wealth while providing easy access when needed.</p>
+              </div>
+              <img className={classes.vaultCardImage} src={productRegular} alt="customer" />
             </div>
             <div className={classes.savingsVaultCard}>
               <div>
                 <h4>Savings Vault</h4>
                 <p>Save for your future with our Savings Vault, designed to help you achieve your financial goals while adhering to Islamic principles.</p>
               </div>
+              <img className={classes.vaultCardImage} src={productSaving} alt="customer" />
             </div>
             <div className={classes.vaultCard}>
-              <h4>Dollar Savings Vault</h4>
-              <p>Protect your wealth from currency fluctuations with our Dollar Savings Vault, providing stability and growth opportunities.</p>
+              <div>
+                <h4>Dollar Savings Vault</h4>
+                <p>Protect your wealth from currency fluctuations with our Dollar Savings Vault, providing stability and growth opportunities.</p>
+              </div>
+              <img className={classes.vaultCardImage} src={productDollar} alt="customer" />
             </div>
           </div>
         </div>
-        {/* <div className={classes.productImagecontainer}>
-          <img className={classes.productsimage2} src={productsimage2} alt="" />
-        </div> */}
         <div className={classes.downloadContainer} id="download">
           <div className={`${classes.store}`}>
             <Link
               to={"https://apps.apple.com/us/app/stecs/id6451484520"}
-              className={`${classes.play}`}
+              className={`${classes.play} ${classes.playPrimary}`}
             >
               <img src="./apple.png" alt="" />
               <p>App Store</p>
@@ -127,7 +172,7 @@ export default function Products() {
               to={
                 "https://play.google.com/store/apps/details?id=com.stecsmobile.stecs"
               }
-              className={`${classes.play}`}
+              className={`${classes.play} ${classes.playSecondary}`}
             >
               <img src="./google-play.png" alt="" />
               <p>Google Play</p>
@@ -138,30 +183,32 @@ export default function Products() {
           Discover What Our Customers Have to Say: <br /> Real Stories, Real
           Success!
         </p>
-        <div className={classes.customerCardContainer}>
-          <div className={classes.customerCard}>
-            <div className={classes.textAndImageContainer}>
-              <p className={classes.customerComment}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              <img className={classes.customerImage} src={customerImageFrame} alt="customer" />
-            </div>
-            <p className={classes.customerName}>Khadijat</p>
-          </div>
-          <div className={classes.customerCard}>
-            <div className={classes.textAndImageContainer}>
-              <p className={classes.customerComment}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              <img className={classes.customerImage} src={customerImageFrame} alt="customer" />
-            </div>
-            <p className={classes.customerName}>Khadijat</p>
-          </div>
-          <div className={classes.customerCard}>
-            <div className={classes.textAndImageContainer}>
-              <p className={classes.customerComment}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              <img className={classes.customerImage} src={customerImageFrame} alt="customer" />
-            </div>
-            <p className={classes.customerName}>Khadijat</p>
-          </div>
-        </div>
       </div>
+      <div>
+      </div>
+      <Swiper
+        modules={[Navigation, Pagination, A11y, Autoplay]}
+        spaceBetween={50}
+        slidesPerView={3}
+        navigation
+        pagination={{ clickable: true }}
+        autoplay={true
+        }
+        loop={true}
+      >
+        <div className={classes.customerCardContainer}>
+          {customerCards.map((item, index) => (<SwiperSlide key={index}>
+            <div className={classes.customerCard}>
+              <div className={classes.textAndImageContainer}>
+                <p className={classes.customerComment}>{item.comments}</p>
+                <img className={classes.customerImage} src={item.image} alt="customer" />
+              </div>
+              <p className={classes.customerName}>{item.name}</p>
+            </div>
+          </SwiperSlide>
+          ))}
+        </div>
+      </Swiper >
       <Footer />
     </>
   );
