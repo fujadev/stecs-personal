@@ -1,9 +1,9 @@
 .button {
     background: #2AAEDF !important;
     color: white;
-    /* align-items: center;
+    align-items: center;
     display: flex;
-    justify-content: center; */
+    justify-content: center;
     cursor: pointer;
 
 }

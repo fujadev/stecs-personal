@@ -34,9 +34,8 @@ export default function Home() {
       </Helmet>
       <Nav />
       <div
-        className={`containter-fluid ${classes.hero} ${
-          overlayIsActive ? classes.overlay : ""
-        }`}
+        className={`containter-fluid ${classes.hero} ${overlayIsActive ? classes.overlay : ""
+          }`}
       >
         <div className={classes.widthEnforcer}>
           <p className={classes.big}>
