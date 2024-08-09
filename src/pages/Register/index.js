@@ -23,8 +23,13 @@ const validationSchema = Yup.object().shape({
       "Password must contain at least one special character"
     )
     .min(8),
+  confirmPassword: Yup.string()
+    .required()
+    .label("Confirm Password")
+    .oneOf([Yup.ref('password')], "Passwords must match"),
   referral: Yup.string().label("Referral"),
 });
+
 
 export default function Register() {
   const query = useQuery();
@@ -52,7 +57,7 @@ export default function Register() {
           </div>
           <div className={classes.formWrapper}>
             <Formik
-              initialValues={{ email: "", password: "", referral: "" }}
+              initialValues={{ email: "", password: "", confirmPassword: "", referral: "" }}
               validationSchema={validationSchema}
               onSubmit={(values, { setSubmitting }) => {
                 console.log("Form Value", values);
@@ -70,6 +75,7 @@ export default function Register() {
                   });
               }}
             >
+
               {({
                 handleChange,
                 handleSubmit,
@@ -91,6 +97,7 @@ export default function Register() {
                       <p className={classes.error}>{errors.email}</p>
                     )}
                   </div>
+                  {/* Password */}
                   <div className={classes.inputField}>
                     <label>Password</label>
                     <div className={classes.passwordContainer}>
@@ -116,6 +123,30 @@ export default function Register() {
                     </div>
                     {touched.password && (
                       <p className={classes.error}>{errors.password}</p>
+                    )}
+                  </div>
+                  {/* Confirm Password */}
+                  <div className={classes.inputField}>
+                    <label>Confirm Password</label>
+                    <div className={classes.passwordContainer}>
+                      <input
+                        onChange={handleChange("confirmPassword")}
+                        type={showPassword ? "text" : "password"}
+                        name="confirmPassword"
+                        onBlur={() => setFieldTouched("confirmPassword")}
+                        placeholder="Confirm your password"
+                        className={classes.passwordInput}
+                      />
+                      <div className={classes.eyeIcon}>
+                        {showPassword ? (
+                          <IoEyeOutline onClick={() => setShowPassword(false)} />
+                        ) : (
+                          <IoEyeOffOutline onClick={() => setShowPassword(true)} />
+                        )}
+                      </div>
+                    </div>
+                    {touched.confirmPassword && (
+                      <p className={classes.error}>{errors.confirmPassword}</p>
                     )}
                   </div>
                   <div className={classes.inputField}>
