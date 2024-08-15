@@ -64,7 +64,7 @@
 
 
 .texts {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     padding: 0 100px;
     align-items: flex-start;
@@ -151,6 +151,13 @@
     }
 }
 
+.formGroup {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 100%;
+}
 
 /* 
 .loginFormWrapper {

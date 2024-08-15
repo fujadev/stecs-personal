@@ -111,7 +111,7 @@ export default function Community() {
               and halal investing
             </p>
 
-            <div className={classes.button}>
+            {/* <div className={classes.button}>
               <Button buttonSize="big">
                 <Link
                   to="https://chat.whatsapp.com/IsnaShS0KQp444o6VDlNXP"
@@ -121,6 +121,10 @@ export default function Community() {
                   <img src="./images/hero/arrow1.png" alt="" />
                 </Link>
               </Button>
+            </div> */}
+
+            <div className={classes.formGroup}>
+              <div class="sender-form-field" data-sender-form-id="lzsnvh1se3bppd9fjcb"></div>
             </div>
           </div>
         </div>
