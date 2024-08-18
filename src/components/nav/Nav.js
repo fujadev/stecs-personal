@@ -90,7 +90,7 @@ export default function Nav() {
           <Link to="/learn">Learn</Link>
           <Link to="/about-us">About Us</Link>
           <Link to="/community">Community</Link>
-          <Link to="/products">Products</Link>
+          {/* <Link to="/products">Products</Link> */}
           <div className={classes.btn} onClick={buttonClickHandler}>
             <p>Get Started</p>
           </div>
