@@ -87,7 +87,7 @@ export default function Nav() {
         <div className={`${classes.dropdown}`}>
           <Link to="/">Home</Link>
           {/* <Link to="/">Product</Link> */}
-          <Link to="/learn">Learn</Link>
+          {/* <Link to="/learn">Learn</Link> */}
           <Link to="/about-us">About Us</Link>
           <Link to="/community">Community</Link>
           {/* <Link to="/products">Products</Link> */}
