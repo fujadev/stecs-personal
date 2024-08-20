@@ -2,8 +2,8 @@ import React, { useLayoutEffect } from "react";
 import classes from "./Community.module.css";
 import Nav from "../components/nav/Nav";
 import Footer from "../components/footer/Footer";
-// import Button from "../components/button/Button";
-// import { Link } from "react-router-dom";
+import Button from "../components/button/Button";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
 export default function Community() {
@@ -80,48 +80,36 @@ export default function Community() {
             /> */}
             <img src="./footer_logo.png" alt="" className={classes.img3} />
           </div>
+
           <div className={classes.texts}>
             <p className={classes.header}>
-              Your community of ethical wealth builders
+              Want to be part of our Islamic Finance Learning Community?
             </p>
             <p className={classes.body}>
-              Are you confused about how to start investing and building wealth
-              the ethical way? Do you need first-hand information about safe and
-              affordable local and foreign ethical investments? Look no further.
-              Stecstars is the right place to be.
+              Are you a financially savvy Muslim looking for a community where you can share knowledge and grow? Look no further!
             </p>
             <p className={classes.body}>
-              Stecstars has been created to bring together individuals who are
-              looking for investment opportunities that align with their faith
-              and ethical values, while also providing a safe space for them to
-              interact with each other and learn from our in-house financial
-              experts.
+              Stecs Learning Community is a growing community dedicated to empowering Muslims with the tools and knowledge they need to make Shariah-compliant financial decisions. Our community offers educational content, professional advice, valuable resources, and online workshops/webinars tailored to help you navigate your financial journey.
             </p>
             <p className={classes.body}>
-              It doesn’t matter whether you are; a seasoned investor or you are
-              just starting out. The community is tailored just for you.
+              Whether you're just starting or seeking to enhance your financial literacy, our welcoming community is here to support you. With Stecs Learning Community, you can achieve your financial goals while staying true to Islamic principles.
             </p>
             <p className={classes.body}>
-              Share your experiences, ask questions, and engage in discussions
-              related to ethical saving & investing, money management, career or
+              Become a member today and take charge of your financial future in a halal way!
               business.
             </p>
-            <p className={classes.body}>
-              Join the Stecstars today and start your journey towards ethical
-              and halal investing
-            </p>
 
-            {/* <div className={classes.button}>
+            <div className={classes.button}>
               <Button buttonSize="big">
                 <Link
                   to="https://chat.whatsapp.com/IsnaShS0KQp444o6VDlNXP"
                   className={classes.buttonText}
                 >
-                  <p>Join Stecstars Now</p>
+                  <p>Join Us Today</p>
                   <img src="./images/hero/arrow1.png" alt="" />
                 </Link>
               </Button>
-            </div> */}
+            </div>
 
             <div className={classes.formGroup}>
               <div class="sender-form-field" data-sender-form-id="lzsnvh1se3bppd9fjcb"></div>

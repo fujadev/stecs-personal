@@ -71,17 +71,17 @@
 }
 
 .texts p {
-    text-align: start;
+    /* text-align: start; */
 }
 
 .header {
-
     font-weight: 700;
     font-size: 32px;
     line-height: 41px;
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     color: #090A0B;
+    text-align: center;
 }
 
 .body {
@@ -96,7 +96,10 @@
 }
 
 .button {
-    margin-top: 39px
+    margin-top: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .buttonText {
@@ -138,6 +141,7 @@
         font-weight: 700;
         font-size: 18px;
         line-height: 22px;
+
     }
 
     .body {
